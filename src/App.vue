@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    hello
-    <router-view/>
+    <home-header></home-header>
+    <tab></tab>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import HomeHeader from 'components/header/m-header'
+import Tab from 'components/tab/tab'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HomeHeader,
+    Tab
+  }
 }
 </script>
 
